@@ -3,6 +3,7 @@ import axios from 'axios';
 import'./App.css';
 import { Container } from '@material-ui/core';
 import Header from './components/header/Header';
+import Definitions from './Definitions/Definitions';
 
 
 function App() {
@@ -15,18 +16,17 @@ const dictionaryApi = async () => {
 
   try {
 
-    const data  = await axios.get("https://api.dictionaryapi.dev/api/v2/entries/en/victor")
-    console.log(data.data)
+    const data  = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`, {crossdomain: true})
+    setMeanings(data.data)
 
     
   } catch (error) {
-    console.log(error)
   }
 }
 
 useEffect(() => {
   dictionaryApi()
-}, []);
+}, [word, category]);
 
 
 
@@ -34,7 +34,14 @@ useEffect(() => {
   return (
       <div style={{height:'100vh', backgroundColor:'#282c34', color:'white'}}>  
         <Container maxWidth='md' style={{display:'flex', flexDirection:'column', height:'100vh'}}   >
+          
+          
           <Header category={category} setCategory={setCategory} word={word} setWord={setWord} />
+          {
+            meanings && 
+          <Definitions word={word} meanings={meanings} category={category} />
+          }
+          
         </Container>
       </div>
   );
