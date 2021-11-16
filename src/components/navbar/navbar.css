@@ -1,0 +1,103 @@
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.gpt3__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gpt3__navbar-links--logo {
+    margin-right: 5rem;
+}
+
+.gpt3__navbar-links--logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+.gpt3__navbar-links--container {
+    display: flex;
+    flex-direction: row;
+    margin-top: var(-0.4rem);
+}
+
+.gpt3__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.gpt3__navbar-links--container p,
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu--container p {
+    font-family: var(--font-family);
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 1rem 1rem;
+    cursor: pointer;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu--container button {
+    padding: 0.5rem 1.2rem;
+    color: #ffff;
+    background: #ff4820;
+    font-family: var(--font-family);
+    font-weight: 500;
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu {
+    display: none;
+}
+
+.gpt3__navbar-menu--container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    margin-top: 2rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.gpt3__navbar-menu-container-links-sign {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    .gpt3__navbar-links--container {
+        display: none;
+    }
+    .gpt3__navbar-menu {
+        display: block;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gpt3__navbar-sign {
+        display: none;
+    }
+    .gpt3__navbar-menu {
+        display: flex;
+        /* margin-left: 2rem; */
+    }
+}
