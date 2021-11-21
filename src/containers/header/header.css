@@ -79,6 +79,7 @@
     max-width: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .header__img {
