@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: 100vh;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
 }
 
 .header__left {
@@ -52,8 +52,8 @@
     background: #ff4820;
     border-radius: 0rem 0.7rem 0.7rem 0rem;
     border: none;
-    width: 157px;
-    height: 73px;
+    width: 15.7rem;
+    height: 7.3rem;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 1rem;
@@ -63,13 +63,17 @@
 
 .header__people {
     display: flex;
+    justify-content: flex-start;
 }
 .header__people p {
     color: #ffffff;
-    margin: 0.5rem 0 0 1rem;
+    margin: 1rem 0 0 1rem;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 1.2rem;
+}
+.header__people img {
+    height: 3.6rem;
 }
 .header__img-container {
     max-width: 50%;
@@ -80,7 +84,7 @@
 .header__img {
     width: 100%;
     height: 100%;
-    margin-top: -5rem;
+    margin-top: -7rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -107,5 +111,78 @@
     }
     .header__img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header__text-gradient {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .header__text-detail {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .header__input-button {
+        justify-content: center;
+    }
+    .header__input-button button {
+        height: 5rem;
+    }
+    .header__input-button input {
+        height: 5rem;
+    }
+    .header__people {
+        justify-content: center;
+    }
+    .header__img-container {
+        display: none;
+    }
+    .header__img {
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header__text-gradient {
+        text-align: center;
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .header__text-detail {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .header__input-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    }
+    .header__input-button input {
+        max-width: 20rem;
+        border-radius: 0.7rem;
+        margin-bottom: 2rem;
+        height: 4rem;
+    }
+    .header__input-button button {
+        border-radius: 0.7rem;
+        width: 20rem;
+        height: 4rem;
+    }
+    .header__people {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__people img {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+    .header__people p {
+        text-align: center;
+        font-size: 1rem;
     }
 }
