@@ -22,7 +22,7 @@ const WhatGPT3 = () => {
     const Line = () => <span className='line'></span>;
 
     return (
-        <div className='whatgpt'>
+        <div className='whatgpt' id='wgpt3'>
             <Line />
             <Feature header={header1} text={body1} styleline='no-line' />
 

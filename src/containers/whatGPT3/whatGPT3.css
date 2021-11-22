@@ -73,3 +73,19 @@
     color: #ff8a71;
     margin: 9rem 0;
 }
+
+@media screen and (max-width: 550px) {
+    .whatgpt__text-container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .whatgpt__bold-text {
+        margin: 3rem 0;
+        width: 100%;
+    }
+
+    .whatgpt__text-colored {
+        margin: 0 0 4rem 0;
+    }
+}
