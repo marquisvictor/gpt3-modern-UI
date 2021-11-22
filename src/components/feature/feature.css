@@ -1,0 +1,29 @@
+.line {
+    width: 4rem;
+    height: 0.3rem;
+    background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+        #ffffff;
+}
+.feature__container {
+    display: flex;
+    justify-content: space-between;
+
+    /* width: 100%; */
+}
+.feature__header {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 6rem;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    width: 100%;
+}
+
+.feature__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #81afdd;
+}
