@@ -72,6 +72,7 @@
     line-height: 3rem;
     color: #ff8a71;
     margin: 9rem 0;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 550px) {
@@ -79,7 +80,6 @@
         text-align: center;
         flex-direction: column;
     }
-
     .whatgpt__bold-text {
         margin: 3rem 0;
         width: 100%;
