@@ -2,20 +2,15 @@
     display: flex;
     flex-direction: column;
     width: 32rem;
-    /* padding: 0; */
 }
-.line-container {
-    display: flex;
-}
+
 .line {
     width: 4rem;
     height: 0.3rem;
     background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
         #ffffff;
 }
-.no-line {
-    display: none;
-}
+
 .feature__container {
     display: flex;
 }
@@ -38,16 +33,10 @@
     color: #81afdd;
 }
 
-.whatgpt__feature-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 @media screen and (max-width: 1100px) {
     .feature__container {
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .whatgpt__feature-container {
@@ -56,12 +45,5 @@
     }
     .feature__container {
         margin: 2rem;
-    }
-    .line {
-        align-self: center;
-    }
-    .line-container {
-        display: flex;
-        justify-content: center;
     }
 }

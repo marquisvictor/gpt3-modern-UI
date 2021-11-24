@@ -34,12 +34,11 @@ const Features = () => {
             <div className='features-component'>
                 {data.map((featureData, id) => (
                     <div className='feature-component__wrapper'>
-                        <div className='line'></div>
                         <Feature
                             header={featureData.title}
                             text={featureData.text}
                             key={id}
-                            styleline='no-line'
+                            // styleline='no-line'
                         />
                     </div>
                 ))}
