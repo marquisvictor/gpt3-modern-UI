@@ -29,6 +29,7 @@
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 1.6rem;
+    width: 100%;
     line-height: 3rem;
     color: #81afdd;
 }
@@ -36,7 +37,6 @@
 @media screen and (max-width: 1100px) {
     .feature__container {
         flex-direction: column;
-        /* text-align: center; */
     }
 
     .whatgpt__feature-container {

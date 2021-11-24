@@ -38,7 +38,6 @@ const Features = () => {
                             header={featureData.title}
                             text={featureData.text}
                             key={id}
-                            // styleline='no-line'
                         />
                     </div>
                 ))}

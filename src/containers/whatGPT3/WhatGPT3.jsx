@@ -21,7 +21,7 @@ const WhatGPT3 = () => {
 
     return (
         <div className='whatgpt' id='wgpt3'>
-            <Feature header={header1} text={body1} styledisplay='no-line' />
+            <Feature header={header1} text={body1} />
 
             <div className='whatgpt__text-container'>
                 <h1 className='whatgpt__bold-text'>
