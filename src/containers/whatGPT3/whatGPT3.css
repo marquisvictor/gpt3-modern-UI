@@ -75,6 +75,12 @@
     cursor: pointer;
 }
 
+.whatgpt__feature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 550px) {
     .whatgpt__text-container {
         text-align: center;

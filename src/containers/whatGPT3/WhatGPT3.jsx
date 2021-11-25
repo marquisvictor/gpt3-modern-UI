@@ -19,12 +19,9 @@ const WhatGPT3 = () => {
     const body4 =
         'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b';
 
-    const Line = () => <span className='line'></span>;
-
     return (
         <div className='whatgpt' id='wgpt3'>
-            <Line />
-            <Feature header={header1} text={body1} styleline='no-line' />
+            <Feature header={header1} text={body1} />
 
             <div className='whatgpt__text-container'>
                 <h1 className='whatgpt__bold-text'>
