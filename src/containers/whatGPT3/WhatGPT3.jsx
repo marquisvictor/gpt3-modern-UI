@@ -3,25 +3,23 @@ import { Feature } from '../../components';
 import './whatGPT3.css';
 
 const WhatGPT3 = () => {
-    const header1 = 'What is GPT-3';
-    const body1 =
-        'We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by.';
+    const data = {
+        header1: 'What is GPT-3',
+        body1: 'We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by.',
 
-    const header2 = 'Chatbots';
-    const body2 =
-        'We so opinion friends me message as delight. Whole front do of plate heard oh ought. ';
+        header2: 'Chatbots',
+        body2: 'We so opinion friends me message as delight. Whole front do of plate heard oh ought.',
 
-    const header3 = 'Knowledgebase';
-    const body3 =
-        'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b';
+        header3: 'Knowledgebase',
+        body3: 'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b',
 
-    const header4 = 'Education';
-    const body4 =
-        'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b';
+        header4: 'Education',
+        body4: 'At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by. As put impossible own apartments b',
+    };
 
     return (
         <div className='whatgpt' id='wgpt3'>
-            <Feature header={header1} text={body1} />
+            <Feature header={data.header1} text={data.body1} />
 
             <div className='whatgpt__text-container'>
                 <h1 className='whatgpt__bold-text'>
@@ -31,18 +29,18 @@ const WhatGPT3 = () => {
             </div>
             <div className='whatgpt__feature-container'>
                 <Feature
-                    header={header2}
-                    text={body2}
+                    header={data.header2}
+                    text={data.body2}
                     styledisplay='display__column'
                 />
                 <Feature
-                    header={header3}
-                    text={body3}
+                    header={data.header3}
+                    text={data.body3}
                     styledisplay='display__column'
                 />
                 <Feature
-                    header={header4}
-                    text={body4}
+                    header={data.header4}
+                    text={data.body4}
                     styledisplay='display__column'
                 />
             </div>
